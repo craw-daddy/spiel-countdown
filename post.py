@@ -12,6 +12,7 @@ def main():
 
     target = datetime.datetime(2026, 10, 22, 10)
     today = datetime.datetime.now()
+    print(f'{today}')
     diff = target - today
 
     text = client_utils.TextBuilder().text(f'It is {diff.days} days until ').link('Spiel 2026', 'https://www.spiel-essen.de/').text(' (starts 22 Oct 2026)!')
