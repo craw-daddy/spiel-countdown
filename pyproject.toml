@@ -1,0 +1,15 @@
+[project]
+name = "python"
+version = "0.1.0"
+description = "Python environment for Spiel countdown clock, installed 6 Aug, 2026"
+readme = "README.md"
+requires-python = ">=3.14"
+dependencies = [
+    "datetime>=5.5",
+]
+
+[dependency-groups]
+dev = [
+    "ipykernel>=6.29.5",
+]
+
