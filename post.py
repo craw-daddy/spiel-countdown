@@ -16,7 +16,7 @@ def main():
     print(f'{today}')
     diff = target - today
 
-    text = client_utils.TextBuilder().text(f'It is {diff.days} days until ').link('Spiel ' + datetime.strftime(target, '%Y'), 'https://www.spiel-essen.de/').text(' (' + datetime.strftime(target, '%d %B %Y') +')!')
+    text = client_utils.TextBuilder().text(f'It is {diff.days} days until ').link('Spiel ' + target.strftime('%Y'), 'https://www.spiel-essen.de/').text(' (' + target.strftime('%d %B %Y') +')!')
     post = client.send_post(text)
 
 if __name__ == '__main__':
